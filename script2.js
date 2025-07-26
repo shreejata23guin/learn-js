@@ -262,13 +262,49 @@
 //     console.log(city.toUpperCase());
 // }
 
-let marks=[85,97,44,37,76,60];
+// let marks=[85,97,44,37,76,60];
 
-let sum=0;
+// let sum=0;
 
-for(let val of marks){
-    sum += val;
-}
+// for(let val of marks){
+//     sum += val;
+// }
 
-let avg = sum / marks.length;
-console.log('avg marks of the class= ${avg}');
+// let avg = sum / marks.length;
+// console.log('avg marks of the class= ${avg}');
+
+
+// let items=[250,645,300,900,50];
+// let idx=0;
+// for(let value of items){
+//     console.log('value at index &{idx}=${val}');
+//     let offer= val/10;
+//     items [idx] =items[idx] - offer;
+//     console.log('value after offer=${val}');
+//         idx++;
+// }
+
+
+// let fooditems=["burger","pizza","pasta","sandwich","fries"];
+// fooditems.push("noodles", "spring rolls");
+// console.log("fooditems");
+
+// let fooditems=["burger","pizza","pasta","sandwich","fries"];
+// console.log("fooditems" );
+// let deletedItem = fooditems.pop();
+// console.log("fooditems");
+// console.log("deleted", deletedItem);
+
+// let marvelHeroes = ["ironman", "thor", "hulk", "spiderman"];
+// let dcHeroes = ["batman", "superman"];
+
+// let heroes = marvelHeroes.concat(dcHeroes);
+// console.log( heroes);
+
+// let marvelHeroes = ["ironman", "thor", "hulk", "spiderman"];
+// marvelHeroes.unshift ("captain america");
+// let val = marvelHeroes.shift();
+// console.log("deleted", val);
+// let marvelHeroes = ["ironman", "thor", "hulk", "spiderman"];
+// console.log(marvelHeroes);
+// console.log(marvelHeroes.slice(1, 3)); 
