@@ -308,3 +308,163 @@
 // let marvelHeroes = ["ironman", "thor", "hulk", "spiderman"];
 // console.log(marvelHeroes);
 // console.log(marvelHeroes.slice(1, 3)); 
+// let arr=[1, 2, 3, 4, 5, 6, 7]
+
+//arr.splice(2,2,101,102);
+//Add Element
+//arr.splice(2, 0, 101);
+// Delete Element
+// 
+//arr.splice(3,1);
+
+//replace element
+//arr.splice(2, 1, 100);
+
+// let companies=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+// companies.push("Amazon");
+
+
+// function sayHello() {
+//     console.log("Hello, World!");
+// }
+
+// function greet(name) {
+//     console.log("Hello, " + name + "!");
+// }
+
+// greet("Shreejata");
+//function → keyword
+
+// functionName → any name you give
+
+// parameters → optional input values
+
+// {} → block of code that runs when called
+// function functionName(parameters) {
+  // code block
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// let result = add(5, 3);
+// console.log(result);
+
+// const multiply = function(x,y) {
+//     return x * y;
+// };
+
+// console.log(multiply(4, 5));
+
+// const square = (n)=> {
+//     return n * n;
+// };
+
+// console.log(square(6));
+
+// function greet(name = "Guest") {
+//     console.log("Hello, " + name);
+// }
+
+// greet(); 
+
+// function outer() {
+//     function inner() {
+//         console.log("I'm inside"); 
+//     }
+//     inner();
+// }
+// outer();
+
+// function show(){
+//     let message = "Hi!";
+//     console.log(message);
+
+// }
+
+// show(); 
+
+// let name= "Shreejata";
+
+// function display() {
+//     let age=20;
+//     console.log(name);
+//     console.log(age);
+// }
+
+// display();
+
+// function greet(name) {
+//     console.log("Hello, " + name);
+// }
+// function processUser(callback){
+//     const userName = "Shree";
+//     callback(userName);
+// }
+
+// processUser(greet);
+
+// setTimeout(function() {
+//     console.log("3 seconds passed!");
+// }, 3000); 
+
+// setTimeout(() => {
+//     console.log("Done");
+// }, 2000);
+
+// (function() {
+//     console.log("I run instantly!");
+// })();
+
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num, 0);
+// }
+// console.log(sum(1, 2, 3, 4)); // Output: 10
+
+// function outer() {
+//     return function inner() {
+//         console.log("Returned from outer!");
+//     };
+// }
+
+// const result = outer();
+// result(); // Output: Returned from outer
+
+// | Concept                   | What it does                   |
+// | ------------------------- | ------------------------------ |
+// | Basic Function            | Reusable block of code         |
+// | Parameters/Return         | Takes input & gives output     |
+// | Scope                     | Local/global variable rules    |
+// | Callback                  | Pass a function to a function  |
+// | Arrow Function            | Shorter function syntax        |
+// | IIFE                      | Runs instantly                 |
+// | Rest Parameters           | Accepts unknown number of args |
+// | Function Returns Function | Useful for advanced patterns   |
+
+
+// function greet(name) {
+//     console.log("Hi user " + name);
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// function isEven(num) {
+//  return num % 2 === 0;
+// }
+
+// function maxOfThree(a, b, c) {
+//     return Math.max(a, b, c);
+// }
+        
+// function getLength(str) {
+//     return str.length;
+// }
+
+// const para= document.getElementById("demo");
+// console.log(para.textContent);
+
+// const items = document.getElementsByClassName("info");
+// console.log(items[0].textContent);
