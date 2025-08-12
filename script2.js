@@ -468,3 +468,99 @@
 
 // const items = document.getElementsByClassName("info");
 // console.log(items[0].textContent);
+
+// window.console.log("Hello, World!");
+// console.dir(window);
+//  console.dir(document.body.childNodes[1]);
+
+//Dom manipulation
+// console.dir(document.body);
+// document.getElementById("heading"); //h1
+// console.dir(heading);
+
+// let heading = document.getElementById("heading");
+// console.dir(heading);
+
+// let heading=document.getElementsByClassName("heading-class");
+// console.dir(heading);
+// console.log(heading);
+
+// document.addEventListener("DOMContentLoaded", function() {  
+      //What it does: Waits until the browser has parsed the HTML and built the DOM tree. This ensures any getElementById calls won't return null.
+     //Why use it: Safer than running scripts before the HTML is ready; avoids timing bugs
+    // - DOMContentLoaded fires when the browser has completely loaded the HTML
+    //   and built the DOM tree in memory.
+    // - It does NOT wait for images, stylesheets, or videos to load — only the structure.
+    // - This ensures that getElementById calls will NOT return null,
+    //   because the elements already exist in the DOM.
+// const title = document.getElementById("title");
+       //Why use it: Safer than running scripts before the HTML is ready; avoids timing bugs.
+      // - This line grabs the element with ID "title" from the DOM.
+     // - getElementById is very fast because IDs are unique in HTML.
+    // - Returns a reference to the DOM element, so you can change or read it.
+//title.textContent = "Hello, DOM--Lesson 1";
+   //What it does: Replaces the plain text inside the <h1> element. Any HTML inside the string will be treated as text (no parsing).
+   //Security note: textContent is safe from HTML injection.
+    // - Replaces whatever text was inside the <h1> with our new string.
+    // - If there was HTML inside (like <b>bold</b>), it will NOT be rendered as HTML,
+    //   it will appear as plain text — because textContent escapes HTML.
+    // ---------------------- Security Note ----------------------
+    // - Safer than innerHTML because it prevents HTML injection attacks.
+    // ------------------------------------------------------------
+
+    // Step 4: Select the button with id="btn"
+//const btn= document.getElementById("btn");
+     //What it does: Grabs the button so we can attach an event handler to it
+     // - We want to attach an event handler to this button so something happens on click.
+     // - Again, IDs are unique, so this finds exactly one element.
+//btn.addEventListener("click", function(e){
+      //What it does: Adds a click listener to the button. The handler receives an Event object (named e here).  
+        // - addEventListener("click", ...) tells the browser:
+        //   "Whenever the user clicks this button, run this function."
+        // - 'e' is the Event object automatically passed to the handler.
+        //   It contains details like which element was clicked, mouse position, etc.
+// title.textContent = "Button was clicked!";
+           // ---------------------- Why? ----------------------
+        // - Shows how we can manipulate multiple DOM elements in one event.
+        // - Demonstrates that variables like 'title' still point to the same DOM elements.
+//});
+//});
+
+// document.addEventListener("DOMContentLoaded", function() {
+     // 1️⃣ Wait until DOM is ready before running any code
+     //Purpose: Runs the code only after the HTML is fully loaded and the DOM tree is built.
+    //If you try to select elements before they exist in the DOM, you'll get null.
+    //Difference from load:
+   // //DOMContentLoaded fires as soon as HTML is parsed (faster).
+  //load waits for all resources (images, CSS, etc.) to load (slower).
+
+// const heading = document.getElementById("heading");
+     // 2️⃣ select the heading element by its ID
+    // Purpose: Selects the <h1> element with the ID "heading".
+    // document: the root object representing the whole HTML page.
+    // getElementById(): finds exactly one element by ID (IDs should be unique).
+   // Returns a DOM element object, not just text.
+//  const button = document.getElementById("btn");
+    // 3️⃣ Select the button element by its ID
+// heading.textContent = "Welcome to DOM Lesson 1";
+    // 4️⃣ Change the heading's text using textContent
+    //textContent replaces all the text inside an element.
+     // Why not innerHTML?
+      // textContent → treats the string as plain text (safe).
+      // innerHTML → parses it as HTML (can create elements, but dangerous if input is from a user).
+  // button.addEventListener("click", function(e) {
+       // 5️⃣ Add a click event listener to the button
+        // Purpose: Runs the function whenever the button is clicked.
+        // 'e' is the Event object that contains details about the click event.
+          //         Purpose: Waits for a "click" on the button, then runs the function.
+          // addEventListener is preferred over HTML’s onclick attribute because:
+         // Keeps JavaScript separate from HTML.
+        // Allows attaching multiple listeners to the same element.
+        // "click" is the event type — you can also use "mouseover", "keydown", etc.
+// heading.textContent = "Button was clicked!";
+        // 6️⃣ Change the heading text when the button is clicked
+        // Demonstrates how to manipulate DOM elements in response to user actions.
+        //This shows dynamic page updates without refreshing.
+
+//     });
+// });
