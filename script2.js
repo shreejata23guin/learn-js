@@ -564,3 +564,44 @@
 
 //     });
 // });
+
+//document.addEventListener("DOMContentLoaded", function() {
+  // Step 1: Wait for the DOM to be ready
+  //const title = document.getElementById("title");
+  // Step 2: Select the title element by its ID
+  //const toggleButton = document.getElementById("toggleButton");
+  // Step 3: Select the button by its ID
+  //toggleButton.addEventListener("click", function() {
+    // Step 4: Add a click event listener to the button
+    //if (title.style.display === "none") {
+      //title.style.display = "block"; // Show the title
+    //} else {
+     // title.style.display = "none"; // Hide the title
+   // }
+  
+//});
+//});
+
+//document.addEventListener("DOMContentLoaded", function() {
+  // Wait for the DOM to be fully loaded
+//  const title = document.getElementById("title");
+  // Select the title element by its ID
+//  const toggleButton = document.getElementById("toggleButton");
+  // Select the button by its ID
+
+ // toggleButton.addEventListener("click", function() {
+    // Add a click event listener to the button
+    //if (title.style.display === "none") {
+      // If the title is currently hidden
+      //title.style.display = "block"; // Show the title
+
+   // } else {
+      // If the title is currently visible
+     // title.style.display = "none"; // Hide the title
+   // }
+    // Toggle the display property of the title element
+
+//  });
+  // Add a click event listener to the button
+//});
+// This code waits for the DOM to be ready, selects elements, and toggles the visibility of the title element when the button is clicked.

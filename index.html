@@ -1,34 +1,53 @@
-<!-- <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>DOM Lesson 1</title>
-    <style>
-      .active { color: white; background: teal; padding: 4px; }
-    </style>
-  </head>
-  <body>
-    <h1 id="title">Original title</h1>
-    <button id="btn">Click me</button>
-
-    <script src="script2.js"></script>
-    <rel="stylesheet" href="style.css">
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DOM Lesson 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4 - Toggle Text</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkgreen;
+    }
+  </style>
 </head>
 <body>
-    <h1 id="heading">Hello DOM!</h1>
-    <button id="btn">Click Me</button>
+  <h1 id="heading">Message A: Hello, DOM!</h1>
+  <button id="toggleBtn">Toggle Message</button>
 
-    <script src="script2.js"></script>
+  <script>
+    // Step 1: Select the <h1> by its ID
+    const heading = document.getElementById("heading");
+    // -> heading now refers to the <h1> element in memory.
+
+    // Step 2: Select the button
+    const toggleBtn = document.getElementById("toggleBtn");
+    // -> toggleBtn now refers to the <button> element.
+
+    // Step 3: Track which message is showing
+    let isMessageA = true;
+    // -> a boolean variable to keep state (true = showing message A, false = message B).
+
+    // Step 4: Add click event listener to the button
+    toggleBtn.addEventListener("click", function() {
+      // -> Every time user clicks button, this function runs.
+
+      if (isMessageA) {
+        // If current message is A, change it to B
+        heading.textContent = "Message B: You clicked the button!";
+      } else {
+        // If current message is B, change it back to A
+        heading.textContent = "Message A: Hello, DOM!";
+      }
+
+      // Step 5: Flip the state (true ↔ false)
+      isMessageA = !isMessageA;
+    });
+  </script>
 </body>
 </html>
-
 
